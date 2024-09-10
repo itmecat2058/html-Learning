@@ -1,0 +1,8 @@
+Web pages have semantic structure to help convey meaning. The attached template has a recipe for some hummus that _looks_ structured to our eyes, but the compter cannot "see" that structure.
+
+Open up this page in your browser to see how it displays.
+
+HTML tags allow the client to correctly interpret the document structure for the user. Hierarchical tags (<h1> - <h6>, <ol>, <ul>, and <p>) give meaning to the text on the page. There are visual cues, like headings being larger, but they also provide meaning to assistive technology like screen readers. 
+
+In addition to paragraph and heading tags, you'll need to create and use lists. Lists are either _ordered_ (ol) or _unordered_ (ul). Regardless of which kind of list you're using, all items within that list are called _list items (<li>).
+In this exercise, you need to add the correct heirarchical tags to the document so that, when rendered, it has the correct semantic display. For each tag you use, add a comment above (<!-- your comment -->) explaining why you chose the tag you used.
