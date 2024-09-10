@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form-result {
+        font-family: monospace;
+      }
+      input {
+        display: block;
+      }
+      body {
+        background-color: linen;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="form-elements">
+        <h2>Form elements</h2>
+        <!-- Create a list of the elements that are inside the form. -->
+      </section>
+      <section id="form-attributes">
+        <h2>Form attributes</h2>
+        <!-- create a list of the attributes you see on the form element in the instructions document. -->
+      </section>
+      <h2>Login</h2>
+      <form id="form-example">
+        <!-- Put your form in here. Be sure to include the proper form controls! -->
+         Email
+         <input type="email" name="Email" required> Password
+         <input type="password" name="Password" pattern="Password123" required> Phone Number
+         <input type="number" name="Phone Number"  required> Save Password?
+         <input type="checkbox" name="Save Password">
+         <input type="date" name="Date" required>
+         <input type="submit" value="Sumbit">
+      </form>
+      <h2>Your results:</h2>
+      <pre id="form-result"></pre>
+    </main>
+    <script>
+      document
+        .getElementById(`form-example`)
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          console.log(event.target);
+          const data = new FormData(event.target);
+          document.getElementById(`form-result`).textContent = JSON.stringify(
+            Object.fromEntries(data),
+            undefined,
+            2,
+          );
+        });
+    </script>
+  </body>
+</html>
