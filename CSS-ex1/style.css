@@ -1,0 +1,33 @@
+body {
+    background-color: linen;
+}
+
+p {
+    font-family: cursive;
+    color: maroon;
+    text-decoration: wavy;
+    font-size: x-large;
+}
+
+h1 {
+    border-bottom: 0 solid 1px;
+    
+}
+
+li {
+    font-style: oblique;
+}
+
+strong {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+a {
+    color: purple;
+}
+
+span {
+    color: green;
+    background-color: black;
+}
