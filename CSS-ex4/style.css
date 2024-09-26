@@ -1,0 +1,43 @@
+/* Task 1 */
+ul {
+    background-color: aqua;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Task 2 */
+.task2-box {
+    box-sizing: content-box;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.alt-task2-box {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+/* Task 3 */
+.task3-box{
+    border: 5px dotted black;
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+}
+
+/* Task 4 */
+.task4-box span {
+    display: inline-block;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 1px;
+    background-color: magenta;
+}
