@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+main {
+    position: relative;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: linen;
+}
+  
+.graphic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.title {
+    position: relative;
+    left: 15%;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.actors {
+    background-color: black;
+    position: absolute;
+    bottom: 12%;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+.quote {
+    position: absolute;
+    bottom: 8%;
+    background-color: black;
+    font-style: italic;
+    color: white;
+    margin-top: 20px;
+}
+  
+blockquote {
+    margin-left: 20px;
+    margin-right: 20px;
+}
