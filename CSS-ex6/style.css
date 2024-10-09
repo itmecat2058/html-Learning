@@ -1,0 +1,29 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* div {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.info p, .info h1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p, img {
+    flex-direction: column;
+    display: flex;
+    margin: 2px;
+    height: fit-content;
+} */
