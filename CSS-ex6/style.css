@@ -3,27 +3,26 @@
     margin: 0;
 }
 
-body {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/* div {
-    display: flex;
-    justify-content: center;
-    height: fit-content;
+.info, .img {
+    padding: 10px;
+    height: 450px;
+    width: 500px;
+    align-content: center;
+    background-color: gray;
 }
 
-.info p, .info h1 {
-    display: flex;
-    flex-wrap: wrap;
+.info h1, p, a{
+    font-size: xx-large;
+    background-color: gray;
 }
 
-p, img {
-    flex-direction: column;
-    display: flex;
-    margin: 2px;
-    height: fit-content;
-} */
+p, h1 {
+    margin: 15px;
+}
