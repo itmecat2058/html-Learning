@@ -1,6 +1,7 @@
 :root {
-  --primary: #ff6f61;
+  --primary: #2c0461;
   --secondary: #333;
+  --light: #fff;
   --font-family: Arial, sans-serif;
 }
 
@@ -19,7 +20,7 @@ body {
 
 header {
   background-color: var(--primary);
-  color: #fff;
+  color: var(--light);
   text-align: center;
   padding: 1rem;
 }
@@ -29,7 +30,7 @@ nav ul {
   justify-content: center;
   list-style-type: none;
   padding: 1rem 0;
-  background-color: #e3e3e3;
+  background-color: var(--light);
 }
 
 nav ul li a {
@@ -52,8 +53,8 @@ section {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--light);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
