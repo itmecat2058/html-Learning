@@ -1,0 +1,39 @@
+:root {
+    --sm: 1em;
+    --med: 2em;
+    --lar: 3em;
+    --color\dark: rgb(32, 27, 27);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.box {
+    padding: var(--sm);
+    flex: 1 1 0;
+    font-family: cursive;
+    color: aqua;
+    border: 1px solid black;
+}
+
+.box.inverted {
+    background-color: var(--color\dark);
+    color: orangered;
+}
+
+.box.wraper {
+    padding: 0;
+    border: none;
+    margin-top: 15px;
+}
+
+.flex {
+    display: flex;
+}
+.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--lar);
+}
