@@ -1,0 +1,15 @@
+:root {
+    --primary: ;
+    --secondart: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary);
+}
