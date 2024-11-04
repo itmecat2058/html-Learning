@@ -1,6 +1,8 @@
 :root {
-    --primary: ;
-    --secondart: ;
+    --primary: #ef0707;
+    --secondary: #bd0000;
+    --dark: #000;
+    --light: #fff;
 }
 
 * {
@@ -12,4 +14,21 @@
 header {
     display: flex;
     background-color: var(--primary);
+    justify-content: center;
+    font-size: large;
+    padding: 1rem;
 }
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem 0;
+    background-color: var(--secondary);
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--light);
+    margin: 0 1rem;
+  }
