@@ -20,15 +20,28 @@ header {
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 1rem 0;
-    background-color: var(--secondary);
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: var(--light);
-    margin: 0 1rem;
-  }
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 1rem 0;
+  background-color: var(--secondary);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--light);
+  margin: 0 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box {
+    border: 1px solid var(--primary);
+    padding: 1rem;
+    border-radius: 5px;
+}
