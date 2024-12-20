@@ -9,14 +9,14 @@
     <script src="products.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-
-        </nav>
+    <header class="header">
+        <div class="container">
+            <h1>Product Store</h1>
+          </div>      
     </header>
 
-    <main>
-        <section class="products">
+    <main class="main">
+        <section class="container">
             <div class="sidebar">
                 <form class="searchForm">
                     <input type="text" class="searchInput" placeholder="Search...">
@@ -24,21 +24,24 @@
             </div>
             <div class="notSidebar">
                 <article class="product">
-                    <img src="#" alt="Product Image">
+                    <div class="productImage">
+                        <img src="#" alt="Product Image">
+                    </div>
                     <footer>
-                        <p class="productName">######</p>
+                        <h2 class="productName">######</h2>
                         <p class="productPrice">$##.##</p>
+                        <button class="btn">Add to Cart</button>
                     </footer>
+                    
                 </article>
             </div>
-
         </section>
     </main>
 
-    <footer>
-        <nav>
-
-        </nav>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Product Store. All rights reserved.</p>
+          </div>
     </footer>
 </body>
 </html>
