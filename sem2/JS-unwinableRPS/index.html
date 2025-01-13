@@ -8,13 +8,22 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+    <header>
     <h1>
         Lets Play Rock Paper Scissors
     </h1>
+    </header>
+
     <div class="rps">
         <img src="images/wave.png" alt="Icon" id="iconImage">
         <p id="compChoice"></p>
-        <button class="startBtn" onclick="play()">Play</button>
+
+        <button type="button" id="toggleBtn" class="rigged">Rigged</button>
+        <form id="form">
+            <label for="play"></label>
+            <input type="text" name="play" id="formInp">
+            <input type="submit" name="submit" id="formSub">
+        </form>
     </div>
 </body>
 </html>
