@@ -41,13 +41,13 @@ formSub.addEventListener("submit", function(event) {
 //rigged
 function play(PlayerChoice) {
     if (String(PlayerChoice) == "paper") {
-        CompChoiceElem.innerText = "Scissors"
+        CompChoiceElem.innerText = `You lose, I chose scissors`
         iconImage.src = "images/scissors.png"
     } else if (String(PlayerChoice) == "rock") {
-        CompChoiceElem.innerText = "Paper"
+        CompChoiceElem.innerText = `You lose, I chose paper`
         iconImage.src = "images/paper.png"
     } else if (String(PlayerChoice) == "scissors"){
-        CompChoiceElem.innerText = "Rock"
+        CompChoiceElem.innerText = `You lose, I chose rock`
         iconImage.src = "images/rock.png"
     } else {
         CompChoiceElem.innerText = "You idiot i said pick ROCK, PAPER, OR SCISSORS!!!"
