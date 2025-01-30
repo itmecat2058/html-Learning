@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-box">
+            <p class="jokeOutput">Joke Will Appear Here</p>
+        </div>
+        <div class="form-section">
+            <button class="requestBtn" onclick="joke()">Request</button>
+
+            <form class="form-section">
+                <input type="hidden" name="jokeID" id="jokeID"/>
+                <label for="notes">Notes:</label>
+                <input type="text" name="notes" id="notes" rows="4" placeholder="Enter your notes here..."/>
+                <label class="rating" for="rating">Rate (out of 5):</label>
+                <input type="number" name="rating" class="rating" id="rating"/>
+                <button type="submit" class="saveBtn">Save</button>
+            </form>
+        </div>
+        <ul class="savedJokeOutput">
+
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
+<!-- <main>
+    <p class="jokeOutput">Your Dad Joke: </p>
+    <button class="requestBtn" onclick="joke()">Request Joke</button>
+    <button class="saveBtn" onclick="save()">Save Joke</button>
+
+    <div class="notes">
+        <input type="text" name="Notes" id="notes">
+        <input type="range" name="Rateing" id="Rateing">
+    </div>
+
+    <div class="saves">
+        <ul class="savedJokeOutputID"></ul>
+        <ul class="savedJokeOutputJoke"></ul>
+    </div>
+
+</main> -->
