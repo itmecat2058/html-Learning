@@ -3,16 +3,15 @@ const catFactBtn = document.getElementById("cat-fact")
 const dogFactBtn = document.getElementById("dog-fact")
 const responseElem = document.querySelector(".response")
 
-blockerBtn.addEventListener("click", blockerFn)
 catFactBtn.addEventListener("click", catFactFn)
 dogFactBtn.addEventListener("click", dogFactFn)
 
-
-function blockerFn() {
-    console.log("Blocking function started")
-    alert("This blocks the main process")
-    console.log("The process is finished")
-}
+// blockerBtn.addEventListener("click", blockerFn)
+// function blockerFn() {
+//     console.log("Blocking function started")
+//     alert("This blocks the main process")
+//     console.log("The process is finished")
+// }
 
 async function catFactFn() {
     console.log("Cat Fact Requested")
