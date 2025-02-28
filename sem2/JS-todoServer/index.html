@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do Server</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <ul>
-                <li></li>
-            </ul>
+    <main class="container">
+        <div class="box formBox">
+            <form class="form">
+                <label for="title">Title:</label>
+                <input id="title" type="text" name="title"/>
+                <br> <!--there is probably a better way to do this with css but i dont wanna-->
+                <br>
+                <label for="due">Due Date:</label>
+                <input id="due" type="date" name="due"/>
+                <br>
+                <br>
+                <label for="description">Description:</label>
+                <input id="description" type="text" name="description" placeholder="Enter your notes here..."/>
+                <br>
+                <br>
+                <button type="submit" class="saveBtn">Save</button>
+            </form>
+        </div>
+
+        <div class="box todoBox">
+            <h2>Saved Todos</h2>
+            <div class="todoOutput">
+            </div>
         </div>
     </main>
 </body>
