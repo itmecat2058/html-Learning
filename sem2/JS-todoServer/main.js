@@ -1,7 +1,7 @@
 const todoBox = document.querySelector(".todoOutput")
 
 async function req(method, endpoint, data = null) {
-  let userId = btoa("morley:602838");
+  let userId = btoa("morin:604765");
   const headers = {
     "Content-Type": "application/json",
     Authorization: `Basic ${userId}`,
@@ -48,18 +48,25 @@ async function post(form) {
 
 function render(list) {
   todoBox.innerHTML = list.map(todo => {
-    console.log(todo.completed)
-    if (todo.completed = false) {
-      let isComplete = "notCompleted"
-    }
-    return `
-            <div id="${todo.id}" class="${isComplete}">
+    if (todo.completed == true) {
+      return `
+            <div id="${todo.id}" class="completed">
             <h3>${todo.title}</h3>
             <p>${todo.description}</p>
-            <button data-id="${todo.id}" onclick="del(this)">Delete</button>
-            <button data-id="${todo.id}" onclick="complete(this)">Completed</button>
+            <button class="btn Obtn" data-id="${todo.id}" onclick="del(this)">Delete</button>
+            <button class="btn Obtn" data-id="${todo.id}" onclick="complete(this)">Completed</button>
             </div>
         `
+    } else {
+      return `
+            <div id="${todo.id}" class="">
+            <h3>${todo.title}</h3>
+            <p>${todo.description}</p>
+            <button class="btn Obtn" data-id="${todo.id}" onclick="del(this)">Delete</button>
+            <button class="btn Obtn" data-id="${todo.id}" onclick="complete(this)">Completed</button>
+            </div>
+        `
+    }
   })
 }
 
